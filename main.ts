@@ -81,22 +81,62 @@ basic.forever(function () {
             . . . . .
             . . . # .
             `)
-    } else if (degrees == 10) {
-    	
-    } else if (degrees >= 247.5 - 11.25) {
-    	
-    } else if (degrees >= 270 - 11.25) {
-    	
-    } else if (degrees >= 292.5 - 11.25) {
-    	
-    } else if (degrees >= 315 - 11.25) {
-    	
-    } else if (degrees >= 337.5 - 11.25) {
-    	
-    } else if (degrees >= 360 - 11.25) {
-    	
+    } else if (degrees < 236.25) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . # .
+            . . . . #
+            `)
+    } else if (degrees < 258.75) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . #
+            . . . . .
+            `)
+    } else if (degrees < 281.25) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # # #
+            . . . . .
+            . . . . .
+            `)
+    } else if (degrees < 303.75) {
+        basic.showLeds(`
+            . . . . .
+            . . . . #
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+    } else if (degrees < 326.25) {
+        basic.showLeds(`
+            . . . . #
+            . . . # .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+    } else if (degrees < 348.75) {
+        basic.showLeds(`
+            . . . # .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
     } else {
-    	
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
     }
     basic.pause(100)
 })
